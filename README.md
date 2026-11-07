@@ -76,10 +76,10 @@ agente-cipher/
 ├── AGENT.md                 definicao canonica do agente
 ├── .agent/agent.json        metadados legiveis por maquina
 ├── skills/
-│   └── auditoria-de-aplicacao/SKILL.md
-│   └── endurecimento-de-infraestrutura/SKILL.md
-│   └── gestao-de-segredos/SKILL.md
-│   └── autenticacao-e-sessao/SKILL.md
+│   ├── auditoria-de-aplicacao/SKILL.md
+│   ├── endurecimento-de-infraestrutura/SKILL.md
+│   ├── gestao-de-segredos/SKILL.md
+│   ├── autenticacao-e-sessao/SKILL.md
 │   └── resposta-a-incidente/SKILL.md
 ├── install/README.md        instalacao nas 8 CLIs
 └── assets/portrait.png
