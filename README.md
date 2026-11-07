@@ -56,14 +56,14 @@ cat AGENT.md skills/*/SKILL.md > AGENTS.md
 
 | CLI | Instalacao (Windows / PowerShell) | Onde colocar as skills | Rodar |
 |---|---|---|---|
-| **Claude Code** | `irm https://claude.ai/install.ps1 | iex` | `~/.claude/skills/` | `claude -p "<pedido>"` |
-| **Codex** | `irm https://chatgpt.com/codex/install.ps1 | iex` | `AGENTS.md na raiz do projeto` | `codex exec --skip-git-repo-check "<pedido>"` |
-| **Grok** | `irm https://x.ai/cli/install.ps1 | iex` | `passado no prompt` | `grok -p "<pedido>"` |
-| **Antigravity** | `irm https://antigravity.google/cli/install.ps1 | iex` | `passado no prompt` | `agy -p "<pedido>"` |
+| **Claude Code** | `irm https://claude.ai/install.ps1 \| iex` | `~/.claude/skills/` | `claude -p "<pedido>"` |
+| **Codex** | `irm https://chatgpt.com/codex/install.ps1 \| iex` | `AGENTS.md na raiz do projeto` | `codex exec --skip-git-repo-check "<pedido>"` |
+| **Grok** | `irm https://x.ai/cli/install.ps1 \| iex` | `passado no prompt` | `grok -p "<pedido>"` |
+| **Antigravity** | `irm https://antigravity.google/cli/install.ps1 \| iex` | `passado no prompt` | `agy -p "<pedido>"` |
 | **Hermes** | `iex (irm https://hermes-agent.nousresearch.com/install.ps1)` | `passado no prompt` | `hermes` |
 | **OpenClaw** | `& ([scriptblock]::Create((iwr -useb https://openclaw.ai/install.ps1))) -NoOnboard` | `~/.openclaw/skills/` | `openclaw agent --local -m "<pedido>"` |
-| **OpenCode** | `irm https://opencode.ai/install | iex` | `AGENTS.md na raiz do projeto` | `opencode` |
-| **Kimi Code** | `irm https://code.kimi.com/kimi-code/install.ps1 | iex` | `passado no prompt` | `kimi -p "<pedido>"` |
+| **OpenCode** | `irm https://opencode.ai/install \| iex` | `AGENTS.md na raiz do projeto` | `opencode` |
+| **Kimi Code** | `irm https://code.kimi.com/kimi-code/install.ps1 \| iex` | `passado no prompt` | `kimi -p "<pedido>"` |
 
 Passo a passo por CLI, incluindo macOS/Linux: **[install/README.md](install/README.md)**
 
