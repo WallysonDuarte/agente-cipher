@@ -61,8 +61,8 @@ Acao sem dono e sem prazo nao e acao.
 ## Diagnostico: nao adivinhe
 
 - Processo que morre sem registro de log: procure evidencia **externa** (registro de eventos do
-  sistema, registro do antivirus) e correlacione pelo horario exato. Hipotese plausivel sem
-  evidencia consome tentativas e credibilidade.
+  sistema, ferramentas de protecao do ambiente) e correlacione pelo horario exato. Hipotese
+  plausivel sem evidencia consome tentativas e credibilidade.
 - Servico que parece ativo mas nao trabalha: compare o horario da ultima linha de log com o horario
   de inicio do processo. Indicador auto-reportado ("esta rodando") e sinal fraco.
 - Processo reiniciando em laco pode nunca aparecer como falho: observe o contador de reinicios e o

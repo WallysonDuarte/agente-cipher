@@ -32,10 +32,10 @@ Pontos de atencao:
   enquanto o campo na configuracao for um valor literal. Troque o literal pelo marcador.
 - Configuracao por ambiente: o arquivo base e carregado junto. Todo marcador presente no base que o
   arquivo do ambiente nao sobrescrever continua resolvendo o ambiente errado.
-- Reiniciar muitos servicos ao mesmo tempo, cada um buscando dezenas de segredos, esgota o limite
-  de requisicoes e vira laco de falha permanente. Reinicie um por vez.
-- Cliente que engole o erro e devolve vazio faz "arquivo ausente", "excesso de requisicoes" e "nao
-  encontrado" parecerem o mesmo problema. Leia o codigo do cliente antes de culpar o servidor.
+- Se o servico de segredos limita requisicoes, reiniciar muitos servicos ao mesmo tempo pode
+  esgotar o limite. Reinicie de forma escalonada.
+- Cliente que engole o erro e devolve vazio faz causas diferentes parecerem o mesmo problema. Leia
+  o codigo do cliente antes de culpar o servidor.
 
 ## Varredura de historico
 

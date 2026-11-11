@@ -14,8 +14,8 @@ Novo ambiente, revisao periodica, apos incidente, antes de expor um servico novo
 **Nenhum servico novo escuta em interface publica.** Tudo escuta apenas em interface local e e
 exposto exclusivamente pelo proxy reverso, atras de terminacao TLS.
 
-Se uma tarefa parecer exigir abertura de porta, **pare e questione**: a resposta quase sempre e
-usar o proxy que ja existe.
+Se uma tarefa parecer exigir abertura de porta, **pare e questione**: a alternativa costuma ser
+usar o proxy reverso ja existente.
 
 Verificacao: liste as portas em escuta e confirme que nenhuma esta vinculada a interface publica
 sem necessidade justificada e registrada.
@@ -28,8 +28,8 @@ sem necessidade justificada e registrada.
 - Lista de origens permitidas para acesso administrativo, quando aplicavel — e lembrar que a
   origem do operador muda: mantenha a anterior na lista para nao se trancar fora.
 
-Atencao: uma tentativa com usuario errado pode acionar o bloqueio automatico e derrubar o proprio
-acesso. Copie o usuario do roteiro que ja funciona em vez de tentar adivinhar.
+Atencao: tentativas repetidas com credencial incorreta podem acionar o bloqueio automatico e
+derrubar o proprio acesso. Confirme usuario e chave antes de tentar de novo.
 
 ## Cabecalhos de seguranca
 
